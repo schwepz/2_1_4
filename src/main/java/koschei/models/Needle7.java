@@ -7,10 +7,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Needle7 {
 
-    @Autowired
     private Deth8 death;
 
-
+    @Autowired
+    public Needle7(Deth8 death) {
+        this.death = death;
+    }
 
     @Override
     public String toString() {
